@@ -36,6 +36,8 @@ a {
 }
 
 header {
+  position: relative;
+  z-index: 999;
   color: white;
   background-color: #7c83fd;
   background: linear-gradient(90deg, #7c83fd, #88fff7);
@@ -206,6 +208,7 @@ footer {
   .hero-section {
     padding: 0 1rem;
     flex-direction: column-reverse;
+    justify-content: center;
     margin-top: 4rem;
     background: white;
     box-sizing: border-box;
@@ -216,8 +219,9 @@ footer {
   }
 
   .hero-image img {
+    margin-top: 1rem;
+    max-height: 20rem;
     width: 100%;
-    margin-top: 3rem;
   }
 }
 
@@ -336,7 +340,7 @@ footer {
 }
 
 .feature-image {
-  width: 35rem;
+  width: 30rem;
   height: 20rem;
   border-radius: 2rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -355,7 +359,7 @@ footer {
   }
 
   .feature-image {
-    height: 10rem;
+    height: 15rem;
     border-radius: 0.5rem;
   }
 
@@ -412,7 +416,7 @@ footer {
   font-weight: 300;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .test-cards {
     margin: 0 1rem;
     flex-direction: column;
